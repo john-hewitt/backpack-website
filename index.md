@@ -1,14 +1,19 @@
 ---
-title: Introducing the Backpack
+title: 
 feature_text: |
   ## Backpack Models
-  A new neural architecture for interpretability and expressivity
-feature_image: "https://picsum.photos/1300/400?image=989"
+  Neural sequence models with a transparent control mechanism
+feature_image: "assets/banner.png"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
-A Backpack is a drop-in replacement for a Transformer that provides new tools for interpretability while maintaining expressivity.
 
-A Backpack model is a neural network that operates on sequences of symbols. It (1) learns a set of _senses_ of meaning for each symbol, and (2) in context, carefully weights and sums each sense of that context to represent the sequence.
+A **Backpack** is a drop-in replacement for a Transformer that provides new tools for **interpretability-through-control** while still enabling strong language models.
+
+<img src="assets/backpack-process.gif" >
+
+A Backpack model is a neural network that operates on sequences of symbols. It (1) learns a set of _senses_ of meaning for each symbol, and (2) in context, weights and sums each sense of that context to represent each word of the sequence.
+
+When training Backpack Language Models, we find that 
 
 The transparent connection between symbol meaning and model prediction enables new directions in interpretability and control of neural models.
 This simplicity is enabled by the use of existing, opaque neural architectures (like the Transformer) _only in the role of generating weights for the sum_.
@@ -28,35 +33,6 @@ The name "Backpack" is inspired by the fact that a backpack is like a bag---but 
 - Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](#).
 
 
-## Installation (For the Alembic Jekyll Theme)
-
-### As a Jekyll theme
-
-1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the theme and its dependancies
-3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
-4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-### As a GitHub Pages remote theme
-
-1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
-4. Add `remote_theme: daviddarnes/alembic@main` to your `_config.yml` file to set the site theme
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-### As a Boilerplate / Fork
-
-_(deprecated, not recommended)_
-
-1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
-2. Replace the `Gemfile` with one stating all the gems used in your project
-3. Delete the following unnecessary files/folders: `.github`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
-4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
 ## Customising
 
