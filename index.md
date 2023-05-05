@@ -2,7 +2,7 @@
 title: 
 feature_text: |
   ## Backpack Models
-  Neural sequence models with a transparent control mechanism
+  Neural sequence models with an interface for interpretability
 feature_image: "assets/banner.png"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
@@ -11,33 +11,55 @@ A **Backpack** is a drop-in replacement for a Transformer that provides new tool
 
 <img src="assets/backpack-process.gif" >
 
-A Backpack model is a neural network that operates on sequences of symbols. It (1) learns a set of _senses_ of meaning for each symbol, and (2) in context, weights and sums each sense of that context to represent each word of the sequence.
+A Backpack model is a neural network that operates on sequences of symbols. It (1) learns a set of _sense vectors_ of meaning for each symbol, and (2) in context, weights and sums each sense vector of that context to represent each word of the sequence.
 
-When training Backpack Language Models, we find that 
+<img src="assets/senses.png" >
 
-The transparent connection between symbol meaning and model prediction enables new directions in interpretability and control of neural models.
+When training Backpack Language Models, we find that sense vectors specialize to represent fine-grained aspects of predictive utility for each word.
+Intuitively, sense vectors **non-contextually specify the span of ways in which the word might be useful in context,** and the context decides what member of that span to take.
+
+Because each sense vector represents a non-contextual log-probability vector, we say they have a **transparent** semantics.
+The transparent connection between symbol meaning and model prediction enables new directions in interpretability and control.
 This simplicity is enabled by the use of existing, opaque neural architectures (like the Transformer) _only in the role of generating weights for the sum_.
+For one example of control in our ACL paper, we identify a source of gender bias in stereotypically gendered career nouns as being partially derived from a single sense vector, and "turn down" the weights on that sense to reduce bias:
+
+<img src="assets/gender.png" >
 
 The name "Backpack" is inspired by the fact that a backpack is like a bag---but more orderly. Like a bag-of-words, a Backpack representation is a sum of non-contextual senses, but a Backpack is more orderly, because the weights in this sum depend on the ordered sequence.
 
-{% include button.html text="Fork it" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %}   {% include button.html text="Demo" link="#" %}  {% include button.html text="ACL Paper" link="#" %}
+<!--{% include button.html text="Fork it" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %}   {% include button.html text="Demo" link="#" %}  {% include button.html text="ACL Paper" link="#" %}-->
 
-## Demo a Backpack language model
+#### Demo a Backpack language model
 
-- Check out our [visualization of sense vectors](https://huggingface.co/spaces/lora-x/Backpack)
+- Visualize sense vectors [here](https://huggingface.co/spaces/lora-x/Backpack).
 - Generate from and control a Backpack language model [here](#).
 
-## Train your own Backpack
-- To get started quickly, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT](#)
+#### Train or finetune your own Backpacks
+- Download and use our up-to-170M parameter models on [HuggingFace](#).
+- To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT](#).
 - Like JAX and TPUs? We have an implementation in JAX via Stanford's [Levanter library](#).
 - Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](#).
 
+#### Citation
+
+We introduced Backpack Models, and trained and evaluated Backpack Language Models in our ACL paper, _Backpack Language Models_.
+If you find the ideas or models here useful, please cite:
 
 
-## Customising
+```
+@InProceedings{hewitt2023backpack,
+  author =      "Hewitt, John and Thickstun, John and Manning, Christopher D. and Liang, Percy",
+  title =       "Backpack Language Models",
+  booktitle =   "Proceedings of the Association for Computational Linguistics",
+  year =        "2023",
+  publisher =   "Association for Computational Linguistics",
+  location =    "Toronto, Canada",
+}
+```
 
-When using Alembic as a theme means you can take advantage of the file overriding method. This allows you to overwrite any file in this theme with your own custom file, by matching the file name and path. The most common example of this would be if you want to add your own styles or change the core style settings.
+#### Support Acknowledgements
 
-To add your own styles copy the [`styles.scss`](https://github.com/daviddarnes/alembic/blob/master/assets/styles.scss) into your own project with the same file path (`assets/styles.scss`). From there you can add your own styles, you can even optionally ignore the theme styles by removing the `@import "alembic";` line.
+This work was funded or otherwise supported by the following organizations.
+All errors are our own, and all opinions do not necessarily reflect the organizations.
 
-If you're looking to set your own colours and fonts you can overwrite them by matching the variable names from the [`_settings.scss`](https://github.com/daviddarnes/alembic/blob/master/_sass/_settings.scss) file in your own `styles.scss`, make sure to state them before the `@import "alembic";` line so they take effect. The settings are a mixture of custom variables and settings from [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) - follow the link to find out how to configure the typographic settings.
+(NSF image) (CRFM image) (SAIL image) (NLP image)
