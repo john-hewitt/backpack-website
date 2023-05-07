@@ -57,9 +57,14 @@ If you find the ideas or models here useful, please cite:
 }
 ```
 
-#### Support Acknowledgements
+#### Acknowledgements
 
-This work was funded or otherwise supported by the following organizations.
+This work was supported by the following organizations.
 All errors are our own, and all opinions do not necessarily reflect the organizations.
 
-(NSF image) (CRFM image) (SAIL image) (NLP image)
+<img src="assets/stanfordnlp-logo.jpg" width="100px" >
+<img src="assets/crfm-rgb.png" width="120px" >
+<img src="assets/sail-logo.png" width="120px" >
+
+Demos were developed by [Lora Xie](#). Considerable feedback and advice on paper drafts given by the Steven Cao, Xiang Lisa Li, and the rest of the Stanford NLP Group community.
+John Hewitt was supported by the National Science Foundation of the United States, under grant __.
