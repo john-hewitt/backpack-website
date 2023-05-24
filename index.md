@@ -72,5 +72,5 @@ All errors are our own, and all opinions do not necessarily reflect the organiza
 <img src="assets/crfm-rgb.png" width="120px" >
 <img src="assets/sail-logo.png" width="120px" >
 
-Demos were developed by [Lora Xie](#). Considerable feedback and advice on paper drafts given by the Steven Cao, Xiang Lisa Li, and the rest of the Stanford NLP Group community.
+Demos were developed by [Lora Xie](https://www.linkedin.com/in/loraxie/). Considerable feedback and advice on paper drafts given by the Steven Cao, Xiang Lisa Li, and the rest of the Stanford NLP Group community.
 John Hewitt was supported by the National Science Foundation Graduate Research Fellowship under grand number DGE-1656518.
