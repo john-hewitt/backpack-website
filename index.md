@@ -19,8 +19,7 @@ A Backpack model is a neural network that operates on sequences of symbols. It (
 When training Backpack Language Models, we find that sense vectors specialize to represent fine-grained aspects of predictive utility for each word.
 Intuitively, sense vectors **non-contextually specify the span of ways in which the word might be useful in context,** and the context decides what member of that span to take.
 
-Because each sense vector represents a non-contextual log-probability vector, we say they have a **transparent** semantics.
-The transparent connection between symbol meaning and model prediction enables new directions in interpretability and control.
+The direct connection between symbol meaning and model prediction enables new directions in interpretability and control.
 This simplicity is enabled by the use of existing, opaque neural architectures (like the Transformer) _only in the role of generating weights for the sum_.
 For one example of control in our ACL paper, we identify a source of gender bias in stereotypically gendered career nouns as being partially derived from a single sense vector, and "turn down" the weights on that sense to reduce bias:
 
@@ -29,6 +28,12 @@ For one example of control in our ACL paper, we identify a source of gender bias
 The name "Backpack" is inspired by the fact that a backpack is like a bag---but more orderly. Like a bag-of-words, a Backpack representation is a sum of non-contextual senses, but a Backpack is more orderly, because the weights in this sum depend on the ordered sequence.
 
 <!--{% include button.html text="Fork it" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %}   {% include button.html text="Demo" link="#" %}  {% include button.html text="ACL Paper" link="#" %}-->
+
+#### Limitations
+We do not believe the Backpack is an "inherently interpretable" architecture, or that sense vectors make interpretability easy.
+We do believe that the decomposition implemented in Backpacks does allow for new tools, the utility of which we're exploring.
+We discuss limitations in our paper, but to name a few, many sense vectors have no obvious interpretation, and _many_ are combined together to form the final prediction; furthermore, sense vectors assign scores over the whole vocabulary, which our visualizations do not show most of.
+
 
 #### Demo a Backpack language model
 
