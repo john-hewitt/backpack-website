@@ -1,13 +1,14 @@
 ---
 title: 
 feature_text: |
-  ## Backpack Models
+  # Backpack Models
   Neural sequence models with an interface for interpretability
 feature_image: "assets/banner.png"
 excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
 ---
 
 A **Backpack** is a drop-in replacement for a Transformer that provides new tools for **interpretability-through-control** while still enabling strong language models.
+Backpacks decompose the predictive meaning of words into components non-contextually, and aggregate them by a weighted sum, allowing for precise, predictable interventions.
 
 <img src="assets/backpack-process.gif" >
 
@@ -67,4 +68,4 @@ All errors are our own, and all opinions do not necessarily reflect the organiza
 <img src="assets/sail-logo.png" width="120px" >
 
 Demos were developed by [Lora Xie](#). Considerable feedback and advice on paper drafts given by the Steven Cao, Xiang Lisa Li, and the rest of the Stanford NLP Group community.
-John Hewitt was supported by the National Science Foundation of the United States, under grant __.
+John Hewitt was supported by the National Science Foundation Graduate Research Fellowship under grand number DGE-1656518.
