@@ -41,16 +41,15 @@ We discuss limitations in our paper, but to name a few, many sense vectors have 
 - Generate from and control a Backpack language model [here](#).
 
 #### Train or finetune your own Backpacks
-- Download and use our up-to-170M parameter models on [HuggingFace](#).
-- To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT](#).
-- Like JAX and TPUs? We have an implementation in JAX via Stanford's [Levanter library](#).
-- Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](#).
+- Download and use our up-to-170M parameter models on [HuggingFace (out soon)](#).
+- To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT (out soon)](#).
+- Like JAX and TPUs? We have an implementation in JAX via Stanford's [Levanter library (out soon)](#).
+- Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](https://github.com/john-hewitt/backpacks-flash-attn).
 
 #### Citation
 
-We introduced Backpack Models, and trained and evaluated Backpack Language Models in our ACL paper, _Backpack Language Models_.
+In our ACL paper, _Backpack Language Models_, we introduced and evaluated Backpacks.
 If you find the ideas or models here useful, please cite:
-
 
 ```
 @InProceedings{hewitt2023backpack,
@@ -65,12 +64,12 @@ If you find the ideas or models here useful, please cite:
 
 #### Acknowledgements
 
-This work was supported by the following organizations.
+This work was supported by the Stanford Natural Language Processing Group, Stanford Center for Research on Foundation Models, and the Stanford Artificial Intelligence Laboratory.
 All errors are our own, and all opinions do not necessarily reflect the organizations.
 
 <img src="assets/stanfordnlp-logo.jpg" width="100px" >
 <img src="assets/crfm-rgb.png" width="120px" >
 <img src="assets/sail-logo.png" width="120px" >
 
-Demos were developed by [Lora Xie](https://www.linkedin.com/in/loraxie/). Considerable feedback and advice on paper drafts given by the Steven Cao, Xiang Lisa Li, and the rest of the Stanford NLP Group community.
+Demos were developed by [Lora Xie](https://www.linkedin.com/in/loraxie/). Considerable feedback and advice on paper drafts given by Steven Cao, Xiang Lisa Li, and the rest of the Stanford NLP Group community. The work wouldn't have been possible without [FlashAttention](https://github.com/HazyResearch/flash-attention/); thanks Tri Dao and Hazy Research!
 John Hewitt was supported by the National Science Foundation Graduate Research Fellowship under grand number DGE-1656518.
