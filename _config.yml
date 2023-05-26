@@ -133,7 +133,7 @@ navigation_header:
 - title: Paper
   url: /elements/
 - title: Code
-  url: /blog/
+  url: https://github.com/john-hewitt/backpacks-flash-attn
 - title: Demo
   url: /categories/
 - title: Blog Post
