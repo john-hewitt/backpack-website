@@ -131,11 +131,11 @@ navigation_header:
 - title: Home
   url: /
 - title: Paper
-  url: /elements/
+  url: https://arxiv.org/abs/2305.16765
 - title: Code
   url: /#train-or-finetune-your-own-backpacks
 - title: Demo
-  url: /categories/
+  url: https://huggingface.co/spaces/stanfordnlp/Backpack-Demo
 - title: Blog Post
   url: /blogpost/
 

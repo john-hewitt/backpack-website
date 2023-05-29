@@ -34,7 +34,7 @@ excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projec
 Consider the problem of **intervening on the behavior of a language model**, say to make it less gender biased when processing the word _developer_, or _nurse_.
 If one identifies activations in the network that cause a biased prediction, one might intervene to change those activations.
 But one has no guarantees how that intervention would affect the network in other contexts, say for other prefixes of text.
-In this blog post, we'll detail the **Backpack**, a new neural architecture that allows for interventions on **non-contextual word2vec-like word embdedings** that have global, predictable effects on the log-predictions of the language model, for any prefix.
+In this blog post, we'll detail the **Backpack**, a new neural architecture that allows for interventions on **non-contextual word2vec-like word embeddings** that have global, predictable effects on the log-predictions of the language model, for any prefix.
 
 The **Backpack** is a drop-in replacement for the Transformer that provides new tools for **interpretability-through-control** while still enabling strong language models.
 - We'll discuss the design motivation for Backpacks and what distinguishes them from Transformers, RNNs, and most other sequence architectures.
