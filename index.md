@@ -4,7 +4,7 @@ feature_text: |
   # Backpack Models
   Neural sequence models with an interface for interpretability
 feature_image: "assets/banner.png"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+excerpt: "Backpacks are a drop-in replacement for Transformers that enable contextual control through non-contextual interventions."
 ---
 
 A **Backpack** is a drop-in replacement for a Transformer that provides new tools for **interpretability-through-control** while still enabling strong language models.
@@ -37,11 +37,11 @@ We discuss limitations in our paper, but to name a few, many sense vectors have 
 
 #### Demo a Backpack language model
 
-- Visualize sense vectors [here](https://huggingface.co/spaces/lora-x/Backpack).
-- Generate from and control a Backpack language model [here](#).
+- Visualize sense vectors [here](https://huggingface.co/spaces/stanfordnlp/Backpack-Demo) (Individual Word Sense Look Up tab).
+- Generate from and control a Backpack language model [here](https://huggingface.co/spaces/stanfordnlp/Backpack-Demo) (Language Modeling tab).
 
 #### Train or finetune your own Backpacks
-- Download and use our up-to-170M parameter models on [HuggingFace (out soon)](#).
+- Download and use our up-to-170M parameter models on [HuggingFace (out soon)](https://huggingface.co/stanfordnlp/backpack-gpt2).
 - To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT (out soon)](#).
 - Like JAX and TPUs? We have an implementation in JAX via Stanford's [Levanter library (out soon)](#).
 - Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](https://github.com/john-hewitt/backpacks-flash-attn).
