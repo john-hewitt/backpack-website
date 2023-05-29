@@ -7,7 +7,7 @@ feature_image: "assets/banner.png"
 excerpt: "Backpacks are a drop-in replacement for Transformers that enable contextual control through non-contextual interventions."
 ---
 
-A **Backpack** is a drop-in replacement for a Transformer that provides new tools for **interpretability-through-control** while still enabling strong language models.
+A **[Backpack](https://arxiv.org/abs/2305.16765)** is a drop-in replacement for a Transformer that provides new tools for **interpretability-through-control** while still enabling strong language models.
 Backpacks decompose the predictive meaning of words into components non-contextually, and aggregate them by a weighted sum, allowing for precise, predictable interventions.
 
 <img src="assets/backpack-process.gif" >
