@@ -41,14 +41,14 @@ We discuss limitations in our paper, but to name a few, many sense vectors have 
 - Generate from and control a Backpack language model [here](https://huggingface.co/spaces/stanfordnlp/Backpack-Demo) (Language Modeling tab).
 
 #### Train or finetune your own Backpacks
-- Download and use our up-to-170M parameter models on [HuggingFace (out soon)](https://huggingface.co/stanfordnlp/backpack-gpt2).
+- Download and use our up-to-170M parameter models on [HuggingFace](https://huggingface.co/stanfordnlp/backpack-gpt2).
 - To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT (out soon)](#).
 - Like JAX and TPUs? We have an implementation in JAX via Stanford's [Levanter library (out soon)](#).
 - Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](https://github.com/john-hewitt/backpacks-flash-attn).
 
 #### Citation
 
-In our ACL paper, _Backpack Language Models_, we introduced and evaluated Backpacks.
+In our ACL paper, _[Backpack Language Models](https://arxiv.org/abs/2305.16765)_, we introduced and evaluated Backpacks.
 If you find the ideas or models here useful, please cite:
 
 ```
