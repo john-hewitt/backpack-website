@@ -42,7 +42,7 @@ We discuss limitations in our paper, but to name a few, many sense vectors have 
 
 #### Train or finetune your own Backpacks
 - Download and use our up-to-170M parameter models on [HuggingFace](https://huggingface.co/stanfordnlp/backpack-gpt2).
-- To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT (out soon)](#).
+- To get the gist, use our simple implementation on Andrej Karpathy's nanoGPT; [nanoBackpackGPT](https://github.com/SwordElucidator/nanoBackpackLM).
 - Like JAX and TPUs? We have an implementation in JAX via Stanford's [Levanter library (out soon)](#).
 - Want to reproduce our ACL paper? Our original implementation is in FlashAttention, [here](https://github.com/john-hewitt/backpacks-flash-attn).
 
